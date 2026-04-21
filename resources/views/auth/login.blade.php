@@ -48,7 +48,7 @@
 </head>
 <body>
     <div class="card">
-        <h2>🎓 Cursos Virtuales</h2>
+        <h2>Cursos Virtuales</h2>
         <p style="color:#666; margin-bottom:20px">Inicia sesión para continuar</p>
 
         @if(session('success'))

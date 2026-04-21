@@ -2,7 +2,7 @@
 @section('content')
 
 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px">
-    <h1>✏️ Editar Curso</h1>
+    <h1> Editar Curso</h1>
     <a href="{{ route('cursos.index') }}" class="btn btn-secondary">← Volver</a>
 </div>
 

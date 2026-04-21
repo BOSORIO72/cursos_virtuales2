@@ -167,23 +167,23 @@
 <body>
 
 <nav>
-    <a href="{{ route('dashboard') }}" class="nav-brand">🎓 Cursos Virtuales</a>
+    <a href="{{ route('dashboard') }}" class="nav-brand"> Cursos Virtuales</a>
     <div class="nav-links">
         <a href="{{ route('cursos.index') }}"
            class="{{ request()->is('cursos*') ? 'active' : '' }}">
-            📚 Cursos
+             Cursos
         </a>
         <a href="{{ route('estudiantes.index') }}"
            class="{{ request()->is('estudiantes*') ? 'active' : '' }}">
-            👨‍🎓 Estudiantes
+             Estudiantes
         </a>
         <a href="{{ route('inscripciones.index') }}"
            class="{{ request()->is('inscripciones*') ? 'active' : '' }}">
-            📝 Inscripciones
+             Inscripciones
         </a>
         <form action="{{ route('logout') }}" method="POST">
             @csrf
-            <button class="btn-logout-nav" type="submit">🚪 Salir</button>
+            <button class="btn-logout-nav" type="submit"> Salir</button>
         </form>
     </div>
 </nav>

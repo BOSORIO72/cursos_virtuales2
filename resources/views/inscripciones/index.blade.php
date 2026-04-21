@@ -2,7 +2,7 @@
 @section('content')
 
 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px">
-    <h1>📝 Lista de Inscripciones</h1>
+    <h1> Lista de Inscripciones</h1>
     <a href="{{ route('inscripciones.create') }}" class="btn btn-primary">+ Nueva Inscripción</a>
 </div>
 

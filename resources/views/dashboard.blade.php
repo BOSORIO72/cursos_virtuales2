@@ -49,18 +49,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>👋 Bienvenido, {{ Auth::user()->name }}</h1>
+        <h1> Bienvenido, {{ Auth::user()->name }}</h1>
         <p style="color:#555">Has iniciado sesión correctamente. ¿A dónde quieres ir?</p>
 
         <div class="links">
-            <a href="{{ route('cursos.index') }}"        class="btn btn-cursos">📚 Cursos</a>
-            <a href="{{ route('estudiantes.index') }}"   class="btn btn-estudiantes">👨‍🎓 Estudiantes</a>
-            <a href="{{ route('inscripciones.index') }}" class="btn btn-inscripciones">📝 Inscripciones</a>
+            <a href="{{ route('cursos.index') }}"        class="btn btn-cursos"> Cursos</a>
+            <a href="{{ route('estudiantes.index') }}"   class="btn btn-estudiantes"> Estudiantes</a>
+            <a href="{{ route('inscripciones.index') }}" class="btn btn-inscripciones"> Inscripciones</a>
         </div>
 
         <form action="{{ route('logout') }}" method="POST">
             @csrf
-            <button class="btn-logout" type="submit">🚪 Cerrar sesión</button>
+            <button class="btn-logout" type="submit"> Cerrar sesión</button>
         </form>
     </div>
 </body>
