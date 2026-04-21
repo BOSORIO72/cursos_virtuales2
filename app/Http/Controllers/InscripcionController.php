@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Inscripcion;
 use App\Models\Curso;
 use App\Models\Estudiante;
+use Illuminate\Support\Facades\DB;
 
 class InscripcionController extends Controller
 {
@@ -47,9 +48,14 @@ public function store(Request $request)
     return redirect()->route('inscripciones.index')->with('success', 'Inscripción realizada con éxito.');
 }
 
-public function destroy(Inscripcion $inscripcion)
+public function destroy(Inscripcion $inscripcione)
 {
-    $inscripcion->delete();
+    \Log::info('Objeto inscripcion: ' . json_encode($inscripcione->toArray()));
+
+    $resultado = $inscripcione->delete();
+
+    \Log::info('Resultado delete: ' . ($resultado ? 'true' : 'false'));
+
     return redirect()->route('inscripciones.index')->with('success', 'Inscripción cancelada.');
 }
 }
