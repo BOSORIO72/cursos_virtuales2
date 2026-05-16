@@ -15,6 +15,7 @@
 </p>
 
 <h2 style="margin-top:30px; margin-bottom:15px; font-size:18px">Estudiantes inscritos</h2>
+<div class="table-wrapper">
 <table>
     <thead><tr><th>Nombre</th><th>Email</th></tr></thead>
     <tbody>
@@ -24,9 +25,10 @@
             <td>{{ $est->email }}</td>
         </tr>
         @empty
-        <tr><td colspan="2" style="text-align:center; color:#9ca3af; padding:20px">Sin estudiantes inscritos.</td></tr>
+        <tr><td colspan="2" class="empty-state">Sin estudiantes inscritos.</td></tr>
         @endforelse
     </tbody>
 </table>
+</div>
 
 @endsection
